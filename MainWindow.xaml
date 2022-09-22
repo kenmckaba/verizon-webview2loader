@@ -1,0 +1,27 @@
+﻿<Window x:Class="WebView2Version.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebView2Version"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="935">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalAlignment="Center" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="1" Padding="10" Content="Try latin path" Click="GetLatin"/>
+            <Button Grid.Column="3" Padding="10" Content="Try Japanese path" Click="GetJapanese"/>
+        </Grid>
+        <TextBox Name="VersionString" Grid.Row="1" Text="Click a button..."/>
+    </Grid>
+</Window>
