@@ -42,7 +42,7 @@ namespace WebView2Version
 
             try
             {
-                var currentDir = Directory.GetCurrentDirectory();
+                var currentDir = System.Environment.CurrentDirectory;
                 String dllPath;
                 if (getForeign)
                 {
